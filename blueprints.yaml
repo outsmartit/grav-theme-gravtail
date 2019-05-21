@@ -1,0 +1,78 @@
+name: Gravtail
+version: 0.1.0
+description: grav theme based on tailwind
+icon: rebel
+author:
+  name: outsmartit
+  email: info@outsmartit.be
+homepage: https://github.com/outsmartit/grav-theme-gravtail
+demo: http://gravtail.beterweb.com
+keywords: grav, theme, etc
+bugs: https://github.com/outsmartit/grav-theme-gravtail/issues
+readme: https://github.com/outsmartit/grav-theme-gravtail/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+      type: toggle
+      label: Dropdown in Menu
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    sitetitle:
+      type: text
+      label: Site title
+      size: medium
+    ga_id:
+      type: text
+      label: Google Analytics tag
+      size: small
+    company:
+      type: section
+      title: THEME_GRAVTAIL.COMPANY
+      fields:
+        companyname:
+          type: text
+          label: Company name
+        companydata:
+          type: textarea
+          label: Company data
+
+    social:
+      type: section
+      title: THEME_GRAVTAIL.SOCIAL
+
+      fields:
+        linkedin_url:
+          type: text
+          label: Linkedin url
+          size: medium
+        facebook_url:
+          type: text
+          label: Facebook url
+          size: medium
+        twitter_url:
+          type: text
+          label: Twitter url
+          size: medium
+    terms:
+      type: section
+      title: THEME_GRAVTAIL.LEGAL
+
+      fields:
+        term_url:
+          type: text
+          placeholder: '/terms'
+          label: Terms url
+          size: medium
+        disclaimer_url:
+          type: text
+          placeholder: '/disclaimer'
+          label: Disclaimer url
+          size: medium

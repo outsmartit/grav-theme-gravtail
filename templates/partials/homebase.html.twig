@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if(config.themes.gravtail.ga_id !='') %}
+        {% include 'partials/ga.html.twig' %}
+    {% endif %}
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    {% block stylesheets %}
+        <!-- Font Awesome if you need it   -->
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+        <!--Replace with your tailwind.css once created-->
+        {% do assets.addCss('theme://css/gravtail.css', 98) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #0D4A7A 0%, #68ABDF 100%);
+        .
+        }
+    </style>
+
+</head>
+
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+
+<!--Nav-->
+<nav id="header" class="fixed w-full z-30 top-0 text-white">
+
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+
+        <div class="pl-4 flex items-center">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                <!--Icon from: http://www.potlabicons.com/ -->
+
+                <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                    <path d="m430.761719 512 81.238281-122.859375-512 33.296875 44.28125 89.5625zm0 0"/>
+                    <path d="m271 97.472656v-97.472656l-177.980469 89.988281 147.980469 37v29.742188l-10.707031 5.359375c-89.910157 44.949218-151.210938 129.089844-166.316407 226.101562l385.707032-25.050781c-11.210938-112.628906-77.722656-211.636719-178.683594-265.667969zm-30 245.960938c-16.554688-17.453125-27.121094-39.558594-28.8125-64.566406-2.015625-30.015626 8.757812-57.886719 28.8125-79.289063zm30-11.453125v-179.957031c33.695312 55.8125 33.308594 125.050781 0 179.957031zm0 0"/>
+                </svg>
+                {{ config.themes.gravtail.sitetitle }}
+            </a>
+        </div>
+
+        <div class="block lg:hidden pr-4">
+            <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
+                        Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+             id="nav-content">
+            {% include 'partials/navigation.html.twig' %}
+            <span id="navAction"></span>
+        </div>
+    </div>
+
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
+</nav>
+
+{% block content %}{% endblock %}
+
+
+{% include 'partials/footer.html.twig' %}
+
+<!-- jQuery if you need it
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+{% block bottom %}
+    {% do assets.AddJs('theme://js/gravtail.js') %}
+    {{ assets.js() }}
+{% endblock %}
+
+
+</body>
+
+</html>

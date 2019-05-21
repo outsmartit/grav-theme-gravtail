@@ -1,0 +1,73 @@
+<!--Footer-->
+<footer class="bg-white">
+    <div class="container mx-auto  px-8">
+
+        <div class="w-full flex flex-col md:flex-row py-6">
+
+            <div class="flex-1 mb-6">
+
+                <a class="gt_color no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                    <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 512.005 512.005">
+                        <path d="m430.761719 512 81.238281-122.859375-512 33.296875 44.28125 89.5625zm0 0"/>
+                        <path d="m271 97.472656v-97.472656l-177.980469 89.988281 147.980469 37v29.742188l-10.707031 5.359375c-89.910157 44.949218-151.210938 129.089844-166.316407 226.101562l385.707032-25.050781c-11.210938-112.628906-77.722656-211.636719-178.683594-265.667969zm-30 245.960938c-16.554688-17.453125-27.121094-39.558594-28.8125-64.566406-2.015625-30.015626 8.757812-57.886719 28.8125-79.289063zm30-11.453125v-179.957031c33.695312 55.8125 33.308594 125.050781 0 179.957031zm0 0"/>
+                    </svg>
+                    {{ config.themes.gravtail.sitetitle }}
+
+                </a>
+            </div>
+
+            <div class="flex-1">
+                <p class="uppercase text-gray-500 md:mb-6">{{ 'THEME_GRAVTAIL.LEGAL' |t }}</p>
+                <ul class="list-reset mb-6">
+                    {% if(config.themes.gravtail.term_url !='') %}
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="{{ config.themes.gravtail.terms }}"
+                               class="no-underline hover:underline text-gray-800 hover:text-green-500">{{ 'THEME_GRAVTAIL.TERMS' |t }}</a>
+                        </li>
+                        {% if(config.themes.gravtail.disclaimer_url !='') %}
+                        {% endif %}
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="{{ config.themes.gravtail.disclaimer }}"
+                               class="no-underline hover:underline text-gray-800 hover:text-green-500">{{ 'THEME_GRAVTAIL.PRIVACY' |t }}</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="flex-1">
+                <p class="uppercase text-gray-500 md:mb-6">{{ 'THEME_GRAVTAIL.SOCIAL' |t }}</p>
+                <ul class="list-reset mb-6">
+                    {% if(config.themes.gravtail.facebook_url !='') %}
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="{{ config.themes.gravtail.facebook_url }}"
+                               class="no-underline hover:underline text-gray-800 hover:text-green-500">Facebook</a>
+                        </li>
+                    {% endif %}
+                    {% if(config.themes.gravtail.linkedin_url !='') %}
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="{{ config.themes.gravtail.linkedin_url }}"
+                               class="no-underline hover:underline text-gray-800 hover:text-green-500">Linkedin</a>
+                        </li>
+                    {% endif %}
+                    {% if(config.themes.gravtail.twitter_url !='') %}
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="{{ config.themes.gravtail.twitter_url }}"
+                               class="no-underline hover:underline text-gray-800 hover:text-green-500">Twitter</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="flex-1">
+                {% if(config.themes.gravtail.companyname != '') %}
+                    <p class="uppercase text-gray-500 md:mb-6"> {{ config.themes.gravtail.companyname }}</p>
+                {% else %}
+                    <p class="uppercase text-gray-500 md:mb-6">{{ 'THEME_GRAVTAIL.COMPANY' |t }}</p>
+
+                {% endif %}
+                {{ config.themes.gravtail.companydata }}
+            </div>
+        </div>
+    </div>
+
+
+</footer>
