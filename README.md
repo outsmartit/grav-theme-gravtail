@@ -8,10 +8,10 @@ This grav theme uses the [Tailwindcss](https://tailwindcss.com) framework and is
 Pictures of the demo by [Undraw](https://undraw.co), logo icon by [freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/) 
 
 ## Installation	
-###GPM Update 
+### GPM Update 
 Currently not supported as gravtail is not listed yet.
 	
-###Manual installation
+### Manual installation
 To install this theme, just download the zip version of this repository and unzip it under /your/site/grav/user/themes. Then, rename the folder to gravtail. 
 
 You should now have all the theme files under
@@ -35,5 +35,5 @@ Without the admin panel the parameters have to be filled in manually in the grav
 The names of the different parameters can be found in the blueprint.yaml file of the theme.
 
 
-##Demo
+## Demo
 Demo can be found [here](https://gravtail.beterweb.be).
