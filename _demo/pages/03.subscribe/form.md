@@ -8,8 +8,7 @@ form:
         -
             name: name
             label: Name
-            classes: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:green-shadow-outline'
-            placeholder: Name
+            classes: 'gravtail_input'
             autofocus: 'off'
             autocomplete: 'on'
             type: text
@@ -20,7 +19,7 @@ form:
         -
             name: email
             label: Email
-            classes: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:green-shadow-outline'
+            classes: 'gravtail_input'
             placeholder: 'Our email address'
             type: email
             outerclasses: my-4
@@ -33,7 +32,7 @@ form:
             placeholder: 'Your message'
             type: textarea
             outerclasses: my-4
-            classes: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:green-shadow-outline'
+            classes: 'gravtail_input'
             position: right
             validate:
                 required: true
