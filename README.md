@@ -7,6 +7,11 @@ This grav theme uses the [Tailwindcss](https://tailwindcss.com) framework and is
 
 Pictures of the demo by [Undraw](https://undraw.co), logo icon by [freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/) 
 
+##Tailwind
+Tailwind files are added in the vendor/tailwindcss directory.  Changes can be made to the styles.css file in that directory.
+Compiling can be done via command `npx tailwind build styles.css -o ../../css/gravtail.css`
+For more information about Tailwindcss please refer to the documentation of [Tailwindcss](https://tailwindcss.com)
+
 ## Installation	
 ### GPM Update 
 Currently not supported as gravtail is not listed yet.
@@ -36,4 +41,4 @@ The names of the different parameters can be found in the blueprint.yaml file of
 
 
 ## Demo
-Demo can be found [here](https://gravtail.beterweb.be).
+Demo can be found [here](https://gravtail.outsmartit.be).

@@ -1,7 +1,7 @@
 name: Gravtail
-version: 0.1.0
-description: grav theme based on tailwind
-icon: rebel
+version: 1.0.0
+description: Grav theme based on tailwind
+icon: mandalorian
 author:
   name: outsmartit
   email: info@outsmartit.be
@@ -47,7 +47,6 @@ form:
     social:
       type: section
       title: THEME_GRAVTAIL.SOCIAL
-
       fields:
         linkedin_url:
           type: text
