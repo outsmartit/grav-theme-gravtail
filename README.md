@@ -7,10 +7,15 @@ This grav theme uses the [Tailwindcss](https://tailwindcss.com) framework and is
 
 Pictures of the demo by [Undraw](https://undraw.co), logo icon by [freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/) 
 
-##Tailwind
-Tailwind files are added in the vendor/tailwindcss directory.  Changes can be made to the styles.css file in that directory.
-Compiling can be done via command `npx tailwind build styles.css -o ../../css/gravtail.css`
+## Tailwind
+Tailwind files are no longer added in the vendor/tailwindcss directory, but can easily be installed via npm - see paragraph "Extending Tailwindcss" 
 For more information about Tailwindcss please refer to the documentation of [Tailwindcss](https://tailwindcss.com)
+
+## Extending Tailwindcss  
+If you want to extend tailwind css using your own classes, you can do so by adapting the base.css file and/or the tailwind.config.js file.  
+First you will need to install tailwindcss and dependencies.  Navigate with a CLI tool to the gravtail directory and run npm install.  You can now adapt the above mentioned files and recreate the gravtail.css file using CLI command npm run build which shortcuts to "npx tailwindcss build css/base.css -o css/custom.css".  
+Do not forget to empty caches to see the result.  
+Please refer to the [Tailwindcss docs](https://tailwindcss.com) for more information.
 
 ## Installation	
 ### GPM Update 
@@ -39,12 +44,6 @@ The theme has several configuration settings for the social links, the terms & c
 Without the admin panel the parameters have to be filled in manually in the gravtail.yaml file.  
 The names of the different parameters can be found in the blueprint.yaml file of the theme.
 
-
-## Extending Tailwindcss  
-If you want to extend tailwind css using your own classes, you can do so by adapting the base.css file or the tailwind.config.js file.  
-First you will need to install tailwind css and dependencies.  Navigate with a CLI tool to the gravtail directory and run npm install.  You can now adapt the above mentioned files and recreate the gravtail.css file using CLI command npm run build which shortcuts to npx tailwindcss build css/base.css -o css/custom.css.  
-Do not forget to empty caches to see the result.  
-Please refer to the tailwindcss docs for more information.
 
 ## Demo
 Demo can be found [here](https://gravtail.outsmartit.be).
