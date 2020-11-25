@@ -19,7 +19,7 @@ Currently not supported as gravtail is not listed yet.
 ### Manual installation
 To install this theme, just download the zip version of this repository and unzip it under /your/site/grav/user/themes. Then, rename the folder to gravtail. 
 
-You should now have all the theme files under
+You should now have all the theme files under the gravtail directory
 
 ## Setup
 
@@ -39,6 +39,12 @@ The theme has several configuration settings for the social links, the terms & c
 Without the admin panel the parameters have to be filled in manually in the gravtail.yaml file.  
 The names of the different parameters can be found in the blueprint.yaml file of the theme.
 
+
+## Extending Tailwindcss  
+If you want to extend tailwind css using your own classes, you can do so by adapting the base.css file or the tailwind.config.js file.  
+First you will need to install tailwind css and dependencies.  Navigate with a CLI tool to the gravtail directory and run npm install.  You can now adapt the above mentioned files and recreate the gravtail.css file using CLI command npm run build which shortcuts to npx tailwindcss build css/base.css -o css/custom.css.  
+Do not forget to empty caches to see the result.  
+Please refer to the tailwindcss docs for more information.
 
 ## Demo
 Demo can be found [here](https://gravtail.outsmartit.be).
