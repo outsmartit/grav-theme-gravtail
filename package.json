@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "npx tailwindcss build css/base.css -o css/gravtail.css"
+	},
+	"dependencies": {
+		"tailwindcss": "^2.0.0",
+		"postcss": "^8.0.2",
+		"autoprefixer": "^10.0.0"
+	}
+}
