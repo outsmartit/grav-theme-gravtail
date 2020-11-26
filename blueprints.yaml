@@ -1,12 +1,12 @@
 name: Gravtail
-version: 2.0.0
+version: 2.0.1
 description: Grav theme based on tailwindcss 2
 icon: mandalorian
 author:
   name: outsmartit
-  email: info@outsmartit.be
+  email: outsmartit@outlook.com
 homepage: https://github.com/outsmartit/grav-theme-gravtail
-demo: http://gravtail.beterweb.com
+demo: https://gravtail.outsmartit.be
 keywords: grav, theme, etc
 bugs: https://github.com/outsmartit/grav-theme-gravtail/issues
 readme: https://github.com/outsmartit/grav-theme-gravtail/blob/develop/README.md
