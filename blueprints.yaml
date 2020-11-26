@@ -1,6 +1,6 @@
 name: Gravtail
-version: 1.0.0
-description: Grav theme based on tailwind
+version: 2.0.0
+description: Grav theme based on tailwindcss 2
 icon: mandalorian
 author:
   name: outsmartit
