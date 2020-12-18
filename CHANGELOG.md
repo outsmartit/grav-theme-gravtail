@@ -1,3 +1,16 @@
+# v2.0.2
+##	12/18/2020
+1. [](#new)
+
+2. [](#updated)	
+	fixed js files for
+
+# v2.0.1
+##	11/26/2020
+1. [](#new)
+
+2. [](#updated)	
+	fixed package json file for correct loading of postcss
 
 # v2.0.0
 ##	11/25/2020
