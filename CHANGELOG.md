@@ -1,9 +1,16 @@
+# v2.0.3
+##	12/19/2020
+1. [](#new)
+
+2. [](#updated)	
+	added css for code tags in demo page typegraphy (Chrome)
+
 # v2.0.2
 ##	12/18/2020
 1. [](#new)
 
 2. [](#updated)	
-	fixed js files for
+	fixed js files for mobile
 
 # v2.0.1
 ##	11/26/2020
@@ -28,6 +35,7 @@
 
 2. [](#updated)	
 	Readme.md adapted to include instructions for compiling tailwindcss
+	
 # v0.1.0
 ##  05/19/2019
 

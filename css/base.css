@@ -17,7 +17,6 @@ h5 {
 }
 
 
-@tailwind components;
 .notices{
 	@apply py-4 !important;
 }
@@ -27,12 +26,16 @@ h5 {
 .selected a{
 	color: #2439BB;
 }
-
+code.language-markdown {
+	display: inline-block;
+	width: 100%;
+	overflow: scroll;
+}
 .gravtail_input {
 	@apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
 }
 .gravtail_input:hover {
 	@apply outline-none;
-	/*@apply shadow-outline;*/
+	@apply ring;
 }
 @tailwind utilities;

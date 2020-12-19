@@ -9,9 +9,7 @@
         {% include 'partials/ga.html.twig' %}
     {% endif %}
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
-
     {% block stylesheets %}
         <!-- Font Awesome if you need it   -->
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
