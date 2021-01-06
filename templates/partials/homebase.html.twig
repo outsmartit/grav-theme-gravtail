@@ -16,7 +16,14 @@
         <!--Replace with your tailwind.css once created-->
         {% do assets.addCss('theme://css/gravtail.css', 98) %}
     {% endblock %}
-    {{ assets.css() }}
+
+    {% block javascript %}
+    {% endblock %}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 
@@ -78,8 +85,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 -->
 {% block bottom %}
-    {% do assets.AddJs('theme://js/gravtail.js') %}
-    {{ assets.js() }}
+    {% do assets.AddJs('theme://js/gravtail.js', {group:'bottom'}) %}
+    {{ assets.js('bottom')|raw }}
 {% endblock %}
 
 
