@@ -45,7 +45,7 @@
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
 
         <div class="pl-4 flex items-center">
-            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl md:text-4xl" href="#">
                 <!--Icon from: http://www.potlabicons.com/ -->
 
                 <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
@@ -56,7 +56,7 @@
             </a>
         </div>
 
-        <div class="block lg:hidden pr-4">
+        <div class="block md:hidden pr-4">
             <button id="nav-toggle"
                     class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
@@ -66,10 +66,14 @@
             </button>
         </div>
 
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        <div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block mt-2 md:mt-0 bg-white md:bg-transparent text-black p-4 md:p-0 z-20"
              id="nav-content">
             {% include 'partials/navigation.html.twig' %}
             <span id="navAction"></span>
+
+            {% if config.plugins.login.enabled and grav.user.username %}
+                <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
+            {% endif %}
         </div>
     </div>
 
