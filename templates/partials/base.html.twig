@@ -71,11 +71,17 @@
             </button>
         </div>
 
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        <div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block mt-2 md:mt-0 bg-white md:bg-transparent text-black p-4 md:p-0 z-20"
              id="nav-content">
             {% include 'partials/navigation.html.twig' %}
             <span id="navAction"></span>
+
+            {% if config.plugins.login.enabled and grav.user.username %}
+                <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
+            {% endif %}
+
         </div>
+
     </div>
 
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
