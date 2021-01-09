@@ -4,8 +4,9 @@
 		"build": "npx tailwindcss build css/base.css -o css/gravtail.css"
 	},
 	"dependencies": {
-		"tailwindcss": "^2.0.0",
+		"@tailwindcss/typography": "^0.3.1",
+		"autoprefixer": "^10.0.0",
 		"postcss": "^8.0.2",
-		"autoprefixer": "^10.0.0"
+		"tailwindcss": "^2.0.0"
 	}
 }
