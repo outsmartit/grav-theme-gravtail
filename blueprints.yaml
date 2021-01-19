@@ -1,12 +1,12 @@
 name: Gravtail
-version: 2.0.1
+version: 2.0.4
 description: Grav theme based on tailwindcss 2
 icon: mandalorian
 author:
   name: outsmartit
   email: outsmartit@outlook.com
 homepage: https://github.com/outsmartit/grav-theme-gravtail
-demo: https://gravtail.outsmartit.be
+demo: http://gravtail.outsmartit.be
 keywords: grav, theme, etc
 bugs: https://github.com/outsmartit/grav-theme-gravtail/issues
 readme: https://github.com/outsmartit/grav-theme-gravtail/blob/develop/README.md
@@ -18,6 +18,16 @@ form:
     dropdown.enabled:
       type: toggle
       label: Dropdown in Menu
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    bottom_wave:
+      type: toggle
+      label: Display Bottom Wave
       highlight: 1
       default: 1
       options:

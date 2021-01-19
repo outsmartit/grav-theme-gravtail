@@ -9,7 +9,7 @@
             <img src="{{ page.media['robot.jpg'].url }}" alt="">
         </div>
         <div class="w-full my-3">
-            {{ page.content }}
+            {{ page.content|raw }}
         </div>
         <div class="w-full mt-3 mb-12">
             {% include "forms/form.html.twig" %}

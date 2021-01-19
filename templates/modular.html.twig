@@ -4,9 +4,9 @@
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
 {% block content %}
-    {{ page.content }}
+    {{ page.content|raw }}
     {% for module in page.collection() %}
-        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
-        {{ module.content }}
+        <div id="{{ module.menu|hyphenize }}"></div>
+        {{ module.content|raw }}
     {% endfor %}
 {% endblock %}

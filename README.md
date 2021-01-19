@@ -1,35 +1,38 @@
 # Gravtail Theme
 
 The **Gravtail** Theme is made for [Grav CMS](http://github.com/getgrav/grav).  
+Please note that the purpose of this theme is to be just a demo of using Tailwindcss for Grav CMS.
+If you have feedback or suggestions for improvement, please open an issue first, so we can discuss the change.
+
 ## Description
 
 This grav theme uses the [Tailwindcss](https://tailwindcss.com) framework and is based on the landing page made bij [Tailwindtoolbox.com](https://tailwindtoolbox.com)
 
-Pictures of the demo by [Undraw](https://undraw.co), logo icon by [freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/) 
+Pictures of the demo by [Undraw](https://undraw.co), logo icon by [freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)
 
 ## Tailwind
-Tailwind files are no longer added in the vendor/tailwindcss directory, but can easily be installed via npm - see paragraph "Extending Tailwindcss" 
+Tailwind files are no longer added in the vendor/tailwindcss directory, but can easily be installed via npm - see paragraph "Extending Tailwindcss"
 For more information about Tailwindcss please refer to the documentation of [Tailwindcss](https://tailwindcss.com)
 
-## Extending Tailwindcss  
+## Extending Tailwindcss
 If you want to extend tailwind css using your own classes, you can do so by adapting the base.css file and/or the tailwind.config.js file.  
 First you will need to install tailwindcss and dependencies.  Navigate with a CLI tool to the gravtail directory and run npm install.  You can now adapt the above mentioned files and recreate the gravtail.css file using CLI command npm run build which shortcuts to "npx tailwindcss build css/base.css -o css/custom.css".  
 Do not forget to empty caches to see the result.  
 Please refer to the [Tailwindcss docs](https://tailwindcss.com) for more information.
 
-## Installation	
-### GPM Update 
+## Installation
+### GPM Update
 Currently not supported as gravtail is not listed yet.
-	
+
 ### Manual installation
-To install this theme, just download the zip version of this repository and unzip it under /your/site/grav/user/themes. Then, rename the folder to gravtail. 
+To install this theme, just download the zip version of this repository and unzip it under /your/site/grav/user/themes. Then, rename the folder to gravtail.
 
 You should now have all the theme files under the gravtail directory
 
 ## Setup
 
 If you want to set gravtail theme as the default theme, you can do so by following these steps:  
-if you have the admin panel installed:  
+if you have the admin panel installed:
 * go to themes and click on the activate button under the theme name
 
 Without the admin panel:
